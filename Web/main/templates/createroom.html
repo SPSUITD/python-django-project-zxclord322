@@ -16,7 +16,7 @@
         <div class="posts">
             <form class="RoomCreateForm" method="POST">
                 {%if request.user.is_authenticated%}
-                    <h4 class="formHeader">Создавайте комнату</h4>
+                    <h4 class="formHeader">Создайте комнату</h4>
                     {%csrf_token%}
                     <div>
                         <p>
@@ -26,7 +26,7 @@
                     </div>
                     <button type="submit">Создать</button>
                 {%else%}
-                <h4 class="formHeader">Авторизуйтесь чтобы создать комнату</h4>
+                <h4 class="formHeader">Авторизуйтесь, чтобы создать комнату</h4>
                 {%endif%}
             </form>
 
@@ -46,7 +46,7 @@
             </div>
             {%endfor%}
         {%else%}
-            <p class="textPreviev">Авторизуйтесь чтобы увидеть комнаты</p>
+            <p class="textPreviev">Авторизуйтесь, чтобы увидеть комнаты</p>
         {%endif%}
     </div>
 </div>

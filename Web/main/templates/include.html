@@ -20,7 +20,7 @@
             </div>
             <div class="headerHalf2">
                 <p class="supportText"><a href="{%url 'suport'%}">ПОДДЕРЖКА</a></p>
-                <p class="supportText"><a href="{%url 'UserView'%}">ПОЛЬЗОВАТЕЛЬЫ</a></p>
+                <p class="supportText"><a href="{%url 'UserView'%}">ПОЛЬЗОВАТЕЛИ</a></p>
                 {%if request.user.is_authenticated%}
                 <p class="myProfileText">{{user.username}} | <a href="{%url 'logout'%}">Выход</a></p>
                 {%else%}
@@ -34,7 +34,7 @@
     {%endblock%}
     <div class="footer">
         <p>@ 2021-2021 NHK</p>
-        <p>ПОДДЕРЖКА</p>
+        <p class="supportText"><a href="{%url 'suport'%}">ПОДДЕРЖКА</a></p>
     </div>
 </body>
 

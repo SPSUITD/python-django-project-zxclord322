@@ -12,30 +12,30 @@
         </div>
         <div class="posts">
                 <div class="post">
-                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
-                    <p class="lideryPros">Кот, который магет.</p>
+                    <img src="{%static 'img/nozh.jpg'%}" alt="">
+                    <p class="lideryPros">Убери нож, прошу.</p>
                     <p class="nums">5/10</p>
                 </div>
                 <div class="post">
-                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
-                    <p class="lideryPros">Кот, который магет.</p>
-                    <p class="nums">5/10</p>
+                    <img src="{%static 'img/zxcursed.jpg'%}" alt="">
+                    <p class="lideryPros">Медиа-гигант.</p>
+                    <p class="nums">7/10</p>
                 </div> <div class="post">
-                    <img src="{%static 'img/theCatjpg.jpg'%}" alt="">
-                    <p class="lideryPros">Кот, который магет.</p>
-                    <p class="nums">5/10</p>
+                    <img src="{%static 'img/jotaro.jpg'%}" alt="">
+                    <p class="lideryPros">Джотаро быкует.</p>
+                    <p class="nums">9/10</p>
                 </div> <div class="post">
-                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
-                    <p class="lideryPros">Кот, который магет.</p>
-                    <p class="nums">5/10</p>
+                    <img src="{%static 'img/DIO.jpg'%}" alt="">
+                    <p class="lideryPros">На Джотаро быкуют.</p>
+                    <p class="nums">3/10</p>
                 </div> <div class="post">
-                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
-                    <p class="lideryPros">Кот, который магет.</p>
-                    <p class="nums">5/10</p>
+                    <img src="{%static 'img/touch it.jpg'%}" alt="">
+                    <p class="lideryPros">Take it, touch it...</p>
+                    <p class="nums">8/10</p>
                 </div> <div class="post">
-                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
-                    <p class="lideryPros">Кот, который магет.</p>
-                    <p class="nums">5/10</p>
+                    <img src="{%static 'img/minecraft.jpg'%}" alt="">
+                    <p class="lideryPros">Собака с печеньем.</p>
+                    <p class="nums">10/10</p>
                 </div>
         </div>
     </div>
@@ -46,21 +46,25 @@
         </div>
         {%if request.user.is_authenticated%}
         <div class="post">
-            <img src="{%static 'img/kotomem1.jpg'%}" alt="">
-            <p class="CatsText">Кот открыл рот.</p>
+            <img src="{%static 'img/1.jpg'%}" alt="">
+            <p class="CatsText">Кот стильный в очках.</p>
+            <p class="nums">8/10</p>
+        </div>    <div class="post">
+            <img src="{%static 'img/2.jpg'%}" alt="">
+            <p class="CatsText">Кот закрыл рот.</p>
             <p class="nums">6/10</p>
         </div>    <div class="post">
-            <img src="{%static 'img/kotomem1.jpg'%}" alt="">
+            <img src="{%static 'img/3.jpg'%}" alt="">
             <p class="CatsText">Кот открыл рот.</p>
-            <p class="nums">6/10</p>
+            <p class="nums">7/10</p>
         </div>    <div class="post">
-            <img src="{%static 'img/kotomem1.jpg'%}" alt="">
-            <p class="CatsText">Кот открыл рот.</p>
-            <p class="nums">6/10</p>
+            <img src="{%static 'img/4.jpg'%}" alt="">
+            <p class="CatsText">Кот повесился(Я).</p>
+            <p class="nums">10/10</p>
         </div>
         {%else%}
         <p class="textPreviev">Ты что?</p>
-        <p class="textPreviev">Хочеш без <a href="{%url 'login'%}"><i>авторизации</i></a> увидеть нашых котиков?😠</p>
+        <p class="textPreviev">Хочешь без <a href="{%url 'login'%}"><i>авторизации</i></a> увидеть китиков???😠</p>
         {%endif%}
     </div>
 </div>
