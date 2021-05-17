@@ -1,0 +1,41 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/иконка_которая_на_вкладкеico.ico' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    {%block title%}
+    {%endblock%}
+</head>
+
+<body>
+    <div class="hea">    
+        <div class="header">
+            <div class="headerHalf">
+                <a href="{%url 'home'%}"><img src="{% static 'img/logo.jpg' %}" class="logo" alt="Logo"></a>
+                <p class='textLogo'>NHK</p>
+                <p class="textPreviev">Оцениваем картинки за Вас.</p>
+            </div>
+            <div class="headerHalf2">
+                <p class="supportText"><a href="{%url 'suport'%}">ПОДДЕРЖКА</a></p>
+                <p class="supportText"><a href="{%url 'UserView'%}">ПОЛЬЗОВАТЕЛЬЫ</a></p>
+                {%if request.user.is_authenticated%}
+                <p class="myProfileText">{{user.username}} | <a href="{%url 'logout'%}">Выход</a></p>
+                {%else%}
+                <p class="myProfileText"><a href="{%url 'login'%}">Авторизация</a> | <a href="{%url 'reg'%}">Регистрация</a></p>
+                {%endif%}
+            </div>
+        </div>
+    </div>
+    <div style="height:100px"></div>
+    {%block content%}
+    {%endblock%}
+    <div class="footer">
+        <p>@ 2021-2021 NHK</p>
+        <p>ПОДДЕРЖКА</p>
+    </div>
+</body>
+
+</html>

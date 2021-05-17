@@ -1,0 +1,54 @@
+{%extends 'include.html'%}
+{%load static%}
+{%block title%}<title>Чат Комнаты</title>{%endblock%}
+
+{%block content%}
+<div class="content">
+    <div class="liders">
+        <div style="border-bottom: 2px solid #ccc;" class="newLiderCat">
+            <a href="{%url 'home'%}">
+                <p class="lideryPros">Лидеры просмотров</p>
+            </a>
+            <a href="{%url 'CreateRoom'%}">
+                <p class="lideryPros bottBorder">Чат Комнаты</p>
+            </a>
+        </div>
+        <div class="posts">
+            <form class="RoomCreateForm" method="POST">
+                {%if request.user.is_authenticated%}
+                    <h4 class="formHeader">Создавайте комнату</h4>
+                    {%csrf_token%}
+                    <div>
+                        <p>
+                            <label for="id_username">Имя Комнаты</label>
+                            {{form.name}}
+                        </p>
+                    </div>
+                    <button type="submit">Создать</button>
+                {%else%}
+                <h4 class="formHeader">Авторизуйтесь чтобы создать комнату</h4>
+                {%endif%}
+            </form>
+
+        </div>
+    </div>
+    <div class="cats">
+        <div class="newLiderCat">
+            <p class="lideryPros">Cat vibe zone</p>
+
+        </div>
+        {%if request.user.is_authenticated%}
+            {%for j in room%}
+            <div class="post">
+                <a class="lideryPros" href="{{j.name}}">
+                    <p class="lideryPros">{{j.name}}</p>
+                </a><br><br><br>
+            </div>
+            {%endfor%}
+        {%else%}
+            <p class="textPreviev">Авторизуйтесь чтобы увидеть комнаты</p>
+        {%endif%}
+    </div>
+</div>
+<div style="height:280px"></div>
+{%endblock%}

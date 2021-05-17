@@ -1,0 +1,68 @@
+
+{%extends 'include.html'%}
+{%load static%}
+{%block title%}<title>Главная</title>{%endblock%}
+{%block content%} 
+<div class="content">
+    <div class="liders">
+        <div style="border-bottom: 2px solid #ccc;" class="newLiderCat">
+            <p class="lideryPros bottBorder">Лидеры просмотров</p>
+            <a href="{%url 'CreateRoom'%}"><p class="lideryPros">Чат Комнаты</p></a>
+
+        </div>
+        <div class="posts">
+                <div class="post">
+                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
+                    <p class="lideryPros">Кот, который магет.</p>
+                    <p class="nums">5/10</p>
+                </div>
+                <div class="post">
+                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
+                    <p class="lideryPros">Кот, который магет.</p>
+                    <p class="nums">5/10</p>
+                </div> <div class="post">
+                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
+                    <p class="lideryPros">Кот, который магет.</p>
+                    <p class="nums">5/10</p>
+                </div> <div class="post">
+                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
+                    <p class="lideryPros">Кот, который магет.</p>
+                    <p class="nums">5/10</p>
+                </div> <div class="post">
+                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
+                    <p class="lideryPros">Кот, который магет.</p>
+                    <p class="nums">5/10</p>
+                </div> <div class="post">
+                    <img src="{%static 'img/kotomem2.jpg'%}" alt="">
+                    <p class="lideryPros">Кот, который магет.</p>
+                    <p class="nums">5/10</p>
+                </div>
+        </div>
+    </div>
+    <div class="cats">
+        <div class="newLiderCat">
+            <p class="lideryPros">Cat vibe zone</p>
+
+        </div>
+        {%if request.user.is_authenticated%}
+        <div class="post">
+            <img src="{%static 'img/kotomem1.jpg'%}" alt="">
+            <p class="CatsText">Кот открыл рот.</p>
+            <p class="nums">6/10</p>
+        </div>    <div class="post">
+            <img src="{%static 'img/kotomem1.jpg'%}" alt="">
+            <p class="CatsText">Кот открыл рот.</p>
+            <p class="nums">6/10</p>
+        </div>    <div class="post">
+            <img src="{%static 'img/kotomem1.jpg'%}" alt="">
+            <p class="CatsText">Кот открыл рот.</p>
+            <p class="nums">6/10</p>
+        </div>
+        {%else%}
+        <p class="textPreviev">Ты что?</p>
+        <p class="textPreviev">Хочеш без <a href="{%url 'login'%}"><i>авторизации</i></a> увидеть нашых котиков?😠</p>
+        {%endif%}
+    </div>
+</div>
+<div style="height: 100px;"></div>
+{%endblock%}

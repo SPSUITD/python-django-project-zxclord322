@@ -1,0 +1,356 @@
+body {
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+.hea {
+    width: 100%;
+    position: absolute;
+    background-color: white;
+}
+
+.header {
+    width: 75%;
+    margin: auto;
+    top: 0;
+    height: 100px;
+    display: flex;
+    background-color: white;
+}
+
+.headerHalf {
+    border: 0px solid red;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.headerHalf * {
+    margin: 0 10px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.textLogo {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.textPreviev {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.headerHalf2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.myProfileText {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.supportText {
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.content {
+    margin: auto;
+    width: 65%;
+    border: 0px solid red;
+    display: flex;
+}
+
+.liders {
+    width: 70%;
+}
+
+.cats {
+    width: 30%;
+}
+
+.newLiderCat p {
+    margin: 0px 10px;
+    padding: 12px 0;
+}
+
+.newLiderCat {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+}
+
+.lideryPros {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.bottBorder {
+    border-bottom: 4px solid #e05e54;
+}
+
+.post {
+    width: 85%;
+    height: 100px;
+    margin: auto;
+    margin-top: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.post img {
+    height: 95px;
+}
+
+.nums {
+    font-weight: bold;
+}
+
+.CatsText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    width: 100px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    background-color: #0d0e10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer * {
+    color: gray;
+    margin: 50px 0;
+}
+
+.userRegForm {
+    width: 40%;
+    min-height: 400px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 150px;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.userRegForm button {
+    display: block;
+    margin: auto;
+}
+
+.userRegForm div {
+    width: 65%;
+}
+
+.userRegForm p {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.formHeader {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.user {
+    height: 30%;
+    height: auto;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.RoomCreateForm {
+    width: 70%;
+    min-height: 400px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.RoomCreateForm button {
+    display: block;
+    margin: auto;
+}
+
+.RoomCreateForm div {
+    width: 70%;
+}
+
+.RoomCreateForm p {
+    text-align: right;
+}
+
+a:hover {
+    color: #e05e54;
+    transition: 0.2s;
+}
+
+.formimput {
+    border-radius: 5px;
+}
+
+.formimput::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.mess {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 18px;
+    margin: 10px 0;
+    width: 50%;
+    margin-left: 3%;
+}
+
+.Usermess {
+    border: 2px solid #dedede;
+    background-color: #e5e3ff;
+    border-radius: 5px;
+    padding: 18px;
+    margin: 10px 0;
+    width: 50%;
+    margin-left: 45%;
+}
+
+.usermessage {
+    text-align: right;
+}
+
+.container {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+}
+
+#message {
+    width: 90%;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.sender {
+    width: 5%;
+    height: 50px;
+    text-align: center;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.room {
+    width: 100%;
+    margin-top: 70px;
+}
+
+#display {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 85vh;
+    width: 100%;
+}
+
+.DoNotReg {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.rommButton {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.catImage{
+    width:27%;
+    display: block;
+    margin: auto;
+}
+.supText{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.popular{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.suppost p{
+margin: auto;
+}
+.suppost{
+    width: 85%;
+    height: 100px;
+    margin: auto;
+    margin-top: 2px;
+    background-color: white;
+    align-items: center;
+    padding: 0 35px;
+    padding-top: 40px;
+}

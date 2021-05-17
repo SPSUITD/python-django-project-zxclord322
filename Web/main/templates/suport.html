@@ -1,0 +1,29 @@
+{%extends 'include.html'%}
+{%load static%}
+{%block title%}<title>Пользовательы</title>{%endblock%}
+
+{%block content%}
+    <img class="catImage" src="{%static 'img/cat.jpg'%}" alt="">
+    <p class="supText">Поддержки тут не производится, но при очень бльшом желании на почту</p>
+    <b>
+        <p class="supText">postavtezachetpozhaluista@gmail.com</p>
+    </b>
+    <br>
+    <hr>
+    <br>
+    <p class="popular">Популярные вопросы</p>
+    <br>
+    <div class="suppost">
+        <p class="lideryPros">Могу ли я сам оценить картинку?</p><br>
+        <p style="color: gray;">-НЕТ</p>
+    </div>
+    <div class="suppost">
+        <p class="lideryPros">Если я не согласен с оценкой картинки, куда мне нужно обратиться?</p><br>
+        <p style="color: gray;">-Оценка картинки является полностью объективной и неподкупной.</p>
+    </div>
+    <div class="suppost">
+        <p style="color: gray;" class="lideryPros">почему я не могу добавить свою картинку?</p><br>
+        -Добавить свою картинку можно отправив ее на почту поддержки
+    </div>
+    <div style="height: 80px;"></div>
+{%endblock%}
